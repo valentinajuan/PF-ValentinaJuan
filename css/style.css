@@ -1,0 +1,579 @@
+/* Colores
+Dim Gray --> #696b6a
+Silver --> #b8b9b8
+Cooper --> #ad6c37
+
+Tipografía
+font-family: 'Kanit', sans-serif;
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #b8b9b8;
+    font-family: 'Kanit', sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    margin: .625rem 0;
+}
+
+.logo {    
+    height: 6.25rem;
+    width: auto;
+    margin: .3125rem 2.5rem;
+}
+
+.nav-items { 
+    display: flex;    
+    flex-wrap: wrap;
+    gap: 6.25rem;
+    justify-content: center;
+    align-items: center;   
+    width: 100%;   
+    list-style: none;       
+}
+
+.nav-items li a {
+    color: black;        
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-align: center;    
+}
+
+/* Main */
+main {    
+    font-family: 'Kanit', sans-serif;   
+}
+
+/* Home - Banner */
+.section-banner {
+    background-image: url("../assets/img/banner.png"); 
+    width: 100%;
+    height: 28.125rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+/* Home - Ambas secciones */
+.section-main {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.section-news,
+.section-fixture {
+    width: calc(50% - 1.25rem); 
+    margin: 3.75rem 1.25rem 2.5rem 3.125rem;
+    padding-right: 3.125rem;
+}
+
+/* Home - Noticias */
+.section-news {
+    flex: 1; 
+    width: 100%;      
+}
+
+.news-title { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.news-title a {
+    color: #ad6c37;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.news-title h2 {
+    margin: 0;
+}
+
+.news-container-home { 
+    margin: 1.25rem 0;
+}
+
+.news-container-home article {
+    display: flex; 
+    flex-direction: column;
+}
+
+.news-container-home article h3 {
+    margin-top: 1.25rem;
+    font-size: 1.125rem;
+}
+
+.news-container-home article p {
+    margin: 0.625rem 0; 
+    padding-right: 2.5rem;
+    font-weight: 200;
+}
+
+.news-img-home {
+    width: 25rem;
+    height: auto;
+}
+
+/* Home - Fixture */
+.section-fixture {
+    flex: 1; 
+    width: 100%;    
+}
+
+.fixture-title { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.fixture-title a {
+    color: #ad6c37;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.fixture-title h2 {
+    margin: 0;
+}
+
+.fixture-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem 15%;         
+    border: .0625rem solid black;
+    border-radius: .625rem;
+    overflow: hidden;
+    box-shadow: .125rem .125rem .625rem black;    
+}
+
+/* Home - Fixture - Date */
+.match-date {
+    padding: 0.3125rem 0 0.3125rem 1.25rem;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+}
+
+/* Home - Fixture - Opponent */
+.match-opponent {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0 1.25rem 0;    
+}
+
+.match-opponent h3 {
+    margin: 0;
+    flex: 1;
+}
+
+.match-opponent h4 {
+    margin: 0;    
+    text-align: center;  
+    font-weight: 200;  
+}
+
+.team-1 {
+    text-align: right;
+    width: 45%;
+}
+
+.versus{
+    width: 10%;
+}
+
+.team-2 {
+    text-align: left;
+    width: 45%; 
+}
+
+/* Home - Fixture - Details */
+.match-details {
+    padding: 0 0 1.25rem 0;
+    text-align: center;
+}
+
+.match-details h4 {
+    font-weight: 200;
+}
+
+.match-details h5 {
+    font-weight: 100;
+}
+
+/* Home - Sponsorship */
+.section-sponsorship {
+    display: flex; 
+    gap: 6.25rem;   
+    justify-content: center;
+    background-color: #b8b9b8;
+}
+
+/* General - Títulos */
+.page-title {
+    text-align: center;
+    margin: 3.75rem 0 4.0625rem 0;
+    font-size: 2rem;   
+}
+
+/* Noticias */
+.news-main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.new {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+    margin-bottom: 30px; 
+    border-bottom: 2px solid black; 
+    padding-bottom: 20px; 
+}
+
+.news-img {
+    width: 25rem;
+    height: auto;
+}
+
+.new div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.875rem;
+}
+
+.new div h2 {
+    color: #ad6c37;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.new div h3 {
+    font-size: .9375rem;
+    margin: .625rem 0;
+}
+
+.new div p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+.more-news {
+    text-align: center;
+    margin-top: 2.5rem;
+    display: block;
+    text-decoration: none;
+    color: #ad6c37; 
+    font-size: 1.25rem; 
+    font-weight: bold;    
+}
+
+/* Plantel */
+.team-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+.team-page-title {
+    text-align: center;
+    margin: 3.75rem 0 2.5rem 0;
+    font-size: 2rem;   
+}
+
+.team-page-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.125rem;
+}
+
+.team-page-menu button {
+    width: 9.375rem; 
+    padding: .625rem 0; 
+    margin: 0 1.25rem 2.5rem 1.25rem;
+    background-color: black;
+    border: none;
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.team-page-menu button a {
+    display: block; 
+    text-decoration: none;
+    color: white;
+    width: 100%; 
+}
+
+.team-list {
+    margin-bottom: 3.75rem;
+}
+
+.team-list-title a {
+    text-decoration: none;
+    color: #ad6c37;
+    display: inline-block; 
+}
+
+.player-card {
+    width: 18.75rem;
+    height: auto;
+    padding: 1.25rem;
+}
+
+.coach-card {
+    width: 18.75rem;
+    height: auto;
+    padding: 1.25rem;
+}
+
+/* Fixture */
+/* Estilos comunes para ambas tablas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+/* Estilos específicos para la tabla fixture-table */
+.fixture-table {
+    padding: 0 2.5rem 2.5rem 2.5rem;
+}
+
+.fixture-table th:nth-child(1),
+.fixture-table td:nth-child(1) {
+    width: 5%;
+}
+
+.fixture-table th:nth-child(2),
+.fixture-table td:nth-child(2) {
+    width: 23.75%;
+}
+
+.fixture-table th:nth-child(3),
+.fixture-table td:nth-child(3) {
+    width: 23.75%;
+}
+
+.fixture-table th:nth-child(4),
+.fixture-table td:nth-child(4) {
+    width: 23.75%;
+}
+
+.fixture-table th:nth-child(5),
+.fixture-table td:nth-child(5) {
+    width: 23.75%;
+}
+
+/* Estilos específicos para la tabla positions-table */
+.positions-table {
+    padding: 0 2.5rem 2.5rem 2.5rem; 
+}
+
+.positions-table th:nth-child(1),
+.positions-table td:nth-child(1) {
+    width: 5%;
+}
+
+.positions-table th:nth-child(2),
+.positions-table td:nth-child(2) {
+    width: 80%;
+}
+
+.positions-table th:nth-child(3),
+.positions-table td:nth-child(3) {
+    width: 5%;
+}
+
+.positions-table th:nth-child(4),
+.positions-table td:nth-child(4) {
+    width: 5%;
+}
+
+.positions-table th:nth-child(5),
+.positions-table td:nth-child(5) {
+    width: 5%;
+}
+
+/* Estilo para la primera fila (fondo verde) */
+.positions-table tr.first-position {
+    background-color: #6abf69b0;    
+}
+
+/* Estilo para las dos últimas filas (fondo rojo) */
+.positions-table tr.last-positions {
+    background-color: #e74d3cbd;    
+}
+
+/* Estilo para párrafo después de tabla */
+.positions-table p {
+    padding: .625rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+}
+
+.section-sponsorship {
+    display: flex;     
+}
+
+.section-sponsorship h2 {
+    display: inline;
+    text-align: center;
+}
+
+.sponsors {
+    display: flex;    
+    width: 100%;
+    flex-direction: row-reverse;    
+    gap: 3.125rem;    
+    margin-right: 18.75rem;
+}
+
+.logo-sponsor {
+    height: 5.625rem;
+    width: auto;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: .625rem;      
+}
+
+.logo-social-media {
+    height: 2.1875rem;
+    width: auto;
+    margin: .625rem;
+}
+
+/* Responsive */
+@media(max-width: 768px) {   
+    /* Encabezado */
+    .nav-items {         
+        gap: 3.125rem;
+    }
+
+    /* Sección Noticias */
+    .new {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .news-img-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .news-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .new div {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0 .625rem;
+    }
+
+    .new div h2 {
+        margin-top: 1.25rem;
+    }
+
+    /* Sección Plantel */ 
+    .team-page-menu button { 
+        width: 7.5rem;     
+        margin: 0 .3125rem 1.25rem .3125rem;                  
+    }
+}
+
+
+@media(max-width: 430px) {
+    /* Encabezado */
+    .nav-bar {         
+        display: flex;
+        flex-direction: column;
+    }    
+    
+    .nav-bar-img {
+        display: flex;
+        justify-content: center;
+        margin-top: .625rem;
+    }
+
+    .nav-items { 
+        flex-direction: column;
+        justify-content: center;
+        gap: 0rem;
+        padding: .625rem 0 1.25rem 0;      
+    }
+
+    .new {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .new div {
+        display: flex;
+        justify-content: center;        
+        margin: 0;        
+    }
+
+    .new div h2 {
+        margin-top: 1.25rem;
+        padding: 0rem .625rem;
+    } 
+    
+    .new div h3 {        
+        padding: 0rem .625rem;
+    }  
+
+    .new div p {        
+        padding: 0rem .625rem;
+    } 
+    
+    /* Sección Plantel */
+    .team-page-menu {
+        flex-direction: column;
+    }
+
+    .team-page-title {
+        margin: 3.75rem .625rem 2.5rem .625rem;
+    }
+
+    .team-page-menu button {        
+        margin: 0 0 1.25rem 0;         
+    }
+}
