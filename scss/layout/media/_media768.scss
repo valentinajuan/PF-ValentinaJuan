@@ -1,0 +1,45 @@
+@media(max-width: 768px) { 
+    // header
+    header {        
+        .nav-bar {            
+            .nav-items {
+                gap: 3.125rem;
+            }
+        }
+    }
+    // main-news
+    .news-main {      
+        .news-container {
+            .news-article {
+                @include flex(column, nowrap, center, flex-start);
+                .news-img-container{
+                    @include flex(row, nowrap, flex-start, center);
+                    width: 100%;
+                    .news-img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .news-content {
+                    @include flex(column, nowrap, center, stretch);
+                    margin: 0;
+                    padding: 0 .625rem;
+                    h2 {
+                        margin-top: 1.25rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+    // main-gallery
+    .gallery {
+        gap: .3125rem;
+        padding: 0 3.125rem 3.125rem 3.125rem;
+    }
+    // components_buttons
+    .team-page-menu button {
+        width: 7.5rem;     
+        margin: 0 .3125rem 1.25rem .3125rem;
+    } 
+}

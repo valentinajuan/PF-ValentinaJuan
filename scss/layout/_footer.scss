@@ -1,0 +1,12 @@
+footer {
+    background-color: black;
+    .social-media {
+        @include flex(row-reverse, nowrap, flex-start, stretch);
+        margin-right: .625rem; 
+        .logo-social-media {
+            height: 2.1875rem;
+            width: auto;
+            margin: .625rem;
+        }     
+    }
+}

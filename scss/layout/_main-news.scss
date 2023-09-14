@@ -1,0 +1,49 @@
+.news-main {
+    @include flex(column, nowrap, flex-start, center);
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    .news-page-title {
+        @include page-title;
+    }
+    .news-container {
+        .news-article {
+            @include flex(row, nowrap, flex-start, flex-start);
+            margin-bottom: 1.875rem; 
+            border-bottom: .125rem solid black; 
+            padding-bottom: 1.25rem; 
+            .news-img-container{
+                .news-img {
+                    width: 25rem;
+                    height: auto;
+                }
+            }
+            .news-content {
+                @include flex(column, nowrap, flex-start, stretch);
+                margin-left: 1.875rem;
+                h2 {
+                    margin: 0;
+                    color: $color-secondary;
+                    font-size: 1.5rem;
+                }
+                h3 {
+                    margin: .625rem 0;
+                    font-size: .9375rem;
+                }
+                p {
+                    margin: 0;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    font-weight: 200;
+                }
+            }
+        }
+        .more-news {          
+            display: block;
+            margin-top: 2.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: $color-secondary; 
+            font-size: 1.25rem; 
+            font-weight: bold;
+        }
+    }
+}

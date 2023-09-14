@@ -1,0 +1,12 @@
+@media(max-width: 320px) {
+    // main-fixture   
+    table {        
+        th, td {
+            font-size: .5rem;
+        }        
+    }    
+    // main-gallery
+    .gallery {      
+        padding: 0 .625rem .625rem .625rem;      
+    }
+}

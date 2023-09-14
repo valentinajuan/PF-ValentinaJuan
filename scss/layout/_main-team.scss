@@ -1,0 +1,33 @@
+.team-main {
+    @include flex(column, nowrap, flex-start, center);
+    text-align: center;
+    .team-page-title {
+        @include page-title; 
+    }
+    .team-page-menu {
+        @include flex(row, nowrap, center, stretch);
+        margin-bottom: 3.125rem;
+    }
+    .team-list-section {
+        .team-list-title {
+            a {
+                text-decoration: none;
+                color: $color-secondary;
+                display: inline-block; 
+            }
+        }
+        .team-list {
+            margin-bottom: 3.75rem;
+            .player-card {
+                width: 18.75rem;
+                height: auto;
+                padding: 1.25rem;
+            }
+            .coach-card {
+                width: 18.75rem;
+                height: auto;
+                padding: 1.25rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+main {
+    .section-banner {
+        background-image: url("../assets/img/banner.png"); 
+        width: 100%;
+        height: 28.125rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .section-main {
+        @include flex(row, wrap, space-between, stretch);
+        .section-news {
+            flex: 1; 
+            width: 100%;
+            margin: 3.75rem 1.25rem 2.5rem 3.125rem;
+            padding-right: 3.125rem; 
+            .news-title {
+                @include flex(row, nowrap, space-between, center);
+                margin-bottom: 1.25rem;
+                h2 {
+                    margin: 0; 
+                }
+                a {
+                    color: $color-secondary;
+                    text-decoration: none;
+                    font-weight: bold;
+                    margin-left: auto;
+                }
+            }
+            .news-container-home {
+                margin: 1.25rem 0;
+                article {
+                    display: flex; 
+                    flex-direction: column;
+                    img {
+                        width: 25rem;
+                        height: auto;
+                    }
+                    h3 {
+                        margin-top: 1.25rem;
+                        font-size: 1.125rem;
+                    }
+                    p {
+                        margin: 0.625rem 0; 
+                        padding-right: 2.5rem;
+                        font-weight: 200;
+                    }
+                }
+            }    
+        }
+        .section-fixture {
+            @extend .section-news;
+            .fixture-title {
+                @extend .news-title;
+                h2 {
+                    margin: 0; 
+                }
+                a {
+                    color: $color-secondary;
+                    text-decoration: none;
+                    font-weight: bold;
+                    margin-left: auto;
+                } 
+            }
+        }
+    }
+    .section-sponsorship {
+        @include flex(row, nowrap, center, stretch);
+        gap: 6.25rem;   
+        background-color: $color-principal; 
+        .logo-sponsor {
+            height: 5.625rem;
+            width: auto;
+            &:hover {
+                transform: scale(1.2);
+            }               
+        }
+    }   
+}

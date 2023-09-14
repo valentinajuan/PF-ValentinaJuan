@@ -1,0 +1,48 @@
+.fixture-container {
+    @include flex(column, nowrap, flex-start, stretch);
+    margin: 1.25rem 15%;         
+    border: .0625rem solid black;
+    border-radius: .625rem;
+    overflow: hidden;
+    box-shadow: .125rem .125rem .625rem black;
+    .match-date {
+        padding: 0.3125rem 0 0.3125rem 1.25rem;
+        font-weight: 400;
+        color: white;
+        background-color: black;
+    }
+    .match-opponent {    
+        @include flex(row, nowrap, center, center);
+        padding: 2.5rem 0 1.25rem 0;
+        h3 {
+            flex: 1;
+            margin: 0;
+        }
+        h4 {
+            margin: 0;    
+            text-align: center;  
+            font-weight: 200;
+        }
+        .team-1 {
+            text-align: right;
+            width: 45%;
+        }
+        .versus{
+            width: 10%;
+        }        
+        .team-2 {
+            text-align: left;
+            width: 45%; 
+        }    
+    }
+    .match-details {
+        padding: 0 0 1.25rem 0;
+        text-align: center;
+        h4 {
+            font-weight: 200;
+        }
+        h5 {
+            font-weight: 200;
+        }
+    }
+}
