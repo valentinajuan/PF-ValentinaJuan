@@ -15,6 +15,44 @@
             }
         }
     }
+    // main-home
+    main {
+        .section-banner {
+            background-image: url("../assets/img/banner-mobile.png");
+            height: 15rem;
+        }
+        .section-main {
+            @include flex(column, wrap, space-between, stretch);
+            .section-news {
+                margin: 0;
+                padding: 2.5rem;            
+                .news-container-home {
+                    article {
+                        img {
+                            width: 21.875rem;
+                        }
+                        h3 {
+                            font-size: 1rem;
+                        }
+                        p {
+                            margin: 0.25rem 0;
+                        }
+                    }
+                }
+            }
+            .section-fixture {
+                margin: 0;
+                .fixture-container {
+                margin: .9375rem 0;
+                }
+            }
+        }
+        .section-sponsorship {
+            .logo-sponsor {
+                height: 5rem;
+            }
+        }              
+    }
     // main-news
     .news-main {      
         .news-container {

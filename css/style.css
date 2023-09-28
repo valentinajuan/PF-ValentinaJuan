@@ -324,6 +324,8 @@ main .section-sponsorship {
 @media (max-width: 768px) {
   header .nav-bar .nav-items {
     gap: 3.125rem; }
+  main .section-main .section-news .news-container-home article div p, main .section-main .section-fixture .news-container-home article div p {
+    padding-right: 0; }
   .news-main .news-container .news-article {
     display: flex;
     flex-direction: column;
@@ -379,6 +381,30 @@ main .section-sponsorship {
       align-items: center;
       gap: 0rem;
       padding: .625rem 0 1.25rem 0; }
+  main .section-banner {
+    background-image: url("../assets/img/banner-mobile.png");
+    height: 15rem; }
+  main .section-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; }
+    main .section-main .section-news, main .section-main .section-fixture {
+      margin: 0;
+      padding: 2.5rem; }
+      main .section-main .section-news .news-container-home article img, main .section-main .section-fixture .news-container-home article img {
+        width: 21.875rem; }
+      main .section-main .section-news .news-container-home article h3, main .section-main .section-fixture .news-container-home article h3 {
+        font-size: 1rem; }
+      main .section-main .section-news .news-container-home article p, main .section-main .section-fixture .news-container-home article p {
+        margin: 0.25rem 0; }
+    main .section-main .section-fixture {
+      margin: 0; }
+      main .section-main .section-fixture .fixture-container {
+        margin: .9375rem 0; }
+  main .section-sponsorship .logo-sponsor {
+    height: 5rem; }
   .news-main .news-container .news-article .news-content h2 {
     margin-top: 1.25rem;
     padding: 0rem .625rem; }
@@ -440,11 +466,63 @@ main .section-sponsorship {
     margin: 0 0 1.25rem 0; } }
 
 @media (max-width: 380px) {
+  main .section-banner {
+    background-image: url("../assets/img/banner-mobile.png");
+    height: 12.5rem; }
+  main .section-main .section-news, main .section-main .section-fixture {
+    padding: 1.875rem; }
+    main .section-main .section-news .news-title h2, main .section-main .section-fixture .news-title h2, main .section-main .section-fixture .fixture-title h2 {
+      font-size: 1.25rem; }
+    main .section-main .section-news .news-title a, main .section-main .section-fixture .news-title a, main .section-main .section-fixture .fixture-title a {
+      font-size: 1rem; }
+    main .section-main .section-news .news-container-home article img, main .section-main .section-fixture .news-container-home article img {
+      width: 18.75rem; }
+    main .section-main .section-news .news-container-home article h3, main .section-main .section-fixture .news-container-home article h3 {
+      font-size: 1rem; }
+    main .section-main .section-news .news-container-home article p, main .section-main .section-fixture .news-container-home article p {
+      font-size: .875rem; }
+  main .section-main .section-fixture .fixture-title h2 {
+    font-size: 1.25rem; }
+  main .section-main .section-fixture .fixture-title a {
+    font-size: 1rem; }
+  main .section-main .section-fixture .fixture-container .match-opponent .team-1 {
+    font-size: 1rem; }
+  main .section-main .section-fixture .fixture-container .match-opponent .versus {
+    font-size: 1rem; }
+  main .section-main .section-fixture .fixture-container .match-opponent .team-2 {
+    font-size: 1rem; }
+  main .section-sponsorship .logo-sponsor {
+    height: 4.375rem; }
   table th, table td {
-    font-size: .625rem; } }
+    font-size: .625rem; }
+  .gallery {
+    grid-template-columns: repeat(1, 1fr); }
+    .gallery-horizontal {
+      grid-column: 1 / 1;
+      grid-row: 1 / 2; }
+    .gallery-vertical {
+      grid-column: 1 / 1;
+      grid-row: 2 / 3; }
+    .gallery-1 {
+      grid-column: 1 / 1;
+      grid-row: 3 / 4; }
+    .gallery-2 {
+      grid-column: 1 / 1;
+      grid-row: 4 / 5; }
+    .gallery-3 {
+      grid-column: 1 / 1;
+      grid-row: 5 / 6; }
+    .gallery-4 {
+      grid-column: 1 / 1;
+      grid-row: 6 / 7; } }
 
 @media (max-width: 320px) {
+  main .section-banner {
+    background-image: url("../assets/img/banner-mobile.png");
+    height: 12.5rem; }
+  main .section-main .section-news, main .section-main .section-fixture {
+    padding: 1.25rem; }
+    main .section-main .section-news .news-container-home article img, main .section-main .section-fixture .news-container-home article img {
+      width: 16.875rem; }
   table th, table td {
-    font-size: .5rem; }
-  .gallery {
-    padding: 0 .625rem .625rem .625rem; } }
+    font-size: .5rem; } }

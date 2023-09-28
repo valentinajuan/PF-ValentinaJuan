@@ -1,12 +1,27 @@
 @media(max-width: 320px) {
+    // main-home
+    main {
+        .section-banner {
+            background-image: url("../assets/img/banner-mobile.png");
+            height: 12.5rem;
+        }
+        .section-main {        
+            .section-news {
+                padding: 1.25rem;      
+                .news-container-home {                
+                    article {
+                        img {
+                            width: 16.875rem;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
     // main-fixture   
     table {        
         th, td {
             font-size: .5rem;
         }        
     }    
-    // main-gallery
-    .gallery {      
-        padding: 0 .625rem .625rem .625rem;      
-    }
 }

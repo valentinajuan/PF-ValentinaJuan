@@ -1,8 +1,97 @@
 @media(max-width: 380px) {
+    // main-home
+    main {
+        .section-banner {
+            background-image: url("../assets/img/banner-mobile.png");
+            height: 12.5rem;
+        }
+        .section-main {
+            .section-news {
+                padding: 1.875rem;
+                .news-title {
+                    h2 {
+                        font-size: 1.25rem; 
+                    }
+                    a {
+                        font-size: 1rem; 
+                    }
+                }                            
+                .news-container-home {
+                    article {
+                        img {
+                            width: 18.75rem;
+                        }
+                        h3 {
+                            font-size: 1rem;
+                        }
+                        p {
+                            font-size: .875rem;
+                        }                        
+                    }
+                }
+            }
+            .section-fixture {
+                .fixture-title {
+                    h2 {
+                        font-size: 1.25rem; 
+                    }
+                    a {
+                        font-size: 1rem; 
+                    }
+                }
+                .fixture-container {                
+                    .match-opponent {
+                        .team-1 {
+                            font-size: 1rem;
+                        }
+                        .versus{
+                            font-size: 1rem;
+                        }        
+                        .team-2 {
+                            font-size: 1rem;
+                        }    
+                    }                
+                }         
+            }
+        }
+        .section-sponsorship { 
+            .logo-sponsor {
+                height: 4.375rem;              
+            }
+        }   
+    }
     // main-fixture
     table {        
         th, td {
             font-size: .625rem;
         }        
+    }
+    // main-gallery
+    .gallery {        
+        grid-template-columns: repeat(1,1fr);  
+        &-horizontal {
+            grid-column: 1 / 1;
+            grid-row: 1 / 2;
+        }
+        &-vertical {
+            grid-column: 1 / 1;
+            grid-row: 2 / 3;
+        }
+        &-1 {
+            grid-column: 1 / 1;
+            grid-row: 3 / 4;
+        }
+        &-2 {
+            grid-column: 1 / 1;
+            grid-row: 4 / 5;
+        }
+        &-3 {
+            grid-column: 1 / 1;
+            grid-row: 5 / 6;
+        }
+        &-4 {
+            grid-column: 1 / 1;
+            grid-row: 6 / 7;
+        }     
     }  
 }
